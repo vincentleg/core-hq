@@ -1,6 +1,8 @@
 # CORE HQ
 
-Official company website for CORE HQ, the founder-led organization building [CORE — Creation of Reborn Earth](https://creationofrebornearth.com).
+Personal, non-commercial showcase for CORE HQ and [CORE — Creation of Reborn Earth](https://creationofrebornearth.com), created by Vincent Leguide. It does not sell products, accept payments, show ads, or generate revenue.
+
+Production: <https://core-hq-orcin.vercel.app>
 
 ## Run locally
 

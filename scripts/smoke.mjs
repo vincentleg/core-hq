@@ -92,7 +92,7 @@ try {
       );
       await page
         .getByRole("navigation", { name: "Mobile navigation" })
-        .getByRole("link", { name: "Company" })
+        .getByRole("link", { name: "About" })
         .click();
       await page.waitForURL(/\/company\/?$/);
       assert.match(page.url(), /\/company\/?$/);

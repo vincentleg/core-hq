@@ -32,14 +32,14 @@ export default function Home() {
               </Button>
             </div>
             <div className="hero-proof">
-              <span>FOUNDER-LED · EARLY STAGE</span>
+              <span>INDEPENDENT PROJECT · EARLY STAGE</span>
               <span>SAN FRANCISCO, FIRST</span>
             </div>
           </div>
           <Earth />
         </div>
         <div className="hero-baseline wrap">
-          <span>01 / THE COMPANY</span>
+          <span>01 / THE PROJECT</span>
           <span>SCROLL TO EXPLORE ↓</span>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function Home() {
               compare, and use.
             </p>
             <Link className="text-link" href="/company">
-              Meet the company <ArrowRight size={17} />
+              About the project <ArrowRight size={17} />
             </Link>
           </div>
         </div>

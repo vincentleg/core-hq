@@ -24,7 +24,7 @@ export function Footer() {
         </div>
         <div className="footer-links">
           <span>Explore</span>
-          <Link href="/company">Company</Link>
+          <Link href="/company">About</Link>
           <Link href="/core">CORE</Link>
           <Link href="/manifesto">Manifesto</Link>
           <Link href="/technology">Technology</Link>

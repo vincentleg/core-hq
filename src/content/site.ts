@@ -7,7 +7,7 @@ export const site = {
   founder: "Vincent Leguide",
   contactEmail: "", // Add only after the founder verifies an address for public use.
   navigation: [
-    ["Company", "/company"],
+    ["About", "/company"],
     ["CORE", "/core"],
     ["Manifesto", "/manifesto"],
     ["Technology", "/technology"],
@@ -19,9 +19,9 @@ export const site = {
 export const pageMeta: Record<string, { title: string; description: string }> =
   {
     company: {
-      title: "Company",
+      title: "About",
       description:
-        "Meet CORE HQ, the founder-led venture building an intelligence layer for the physical world.",
+        "Explore CORE HQ, Vincent Leguide’s independent project to imagine an intelligence layer for the physical world.",
     },
     core: {
       title: "CORE: Our First Product",
@@ -51,7 +51,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
     contact: {
       title: "Contact",
       description:
-        "Connect with CORE HQ about research, cities, business, investment, or collaboration.",
+        "Explore CORE HQ’s independent work and ways to contribute research, ideas, or feedback.",
     },
     privacy: {
       title: "Privacy",

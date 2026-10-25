@@ -54,9 +54,9 @@ export default async function Subpage({
         <>
           <PageIntro
             index="01"
-            eyebrow="THE COMPANY"
-            title="A company for a more intelligible world."
-            lead="CORE HQ is an early-stage, founder-led technology venture. We build practical tools toward a long-term goal: helping people understand complex physical-world systems and make better-informed decisions."
+            eyebrow="THE PROJECT"
+            title="An independent project for a more intelligible world."
+            lead="CORE HQ is Vincent Leguide’s personal, non-commercial showcase for the ideas and technology behind CORE. The work explores a long-term goal: helping people understand complex physical-world systems and make better-informed decisions."
           />
           <section className="section">
             <div className="wrap editorial-grid">
@@ -149,7 +149,7 @@ export default async function Subpage({
             </div>
           </section>
           <Closing
-            title="The company behind CORE is just beginning."
+            title="The work behind CORE is just beginning."
             text="See the product in its current form, and help us make the next steps more rigorous."
             href={site.productUrl}
             label="Explore CORE"
@@ -527,7 +527,7 @@ export default async function Subpage({
                   ],
                   [
                     "Data and privacy",
-                    "This company site collects no account data or analytics. Product data practices require separate, ongoing scrutiny.",
+                    "This showcase site collects no account data or analytics. Product data practices require separate, ongoing scrutiny.",
                   ],
                   [
                     "No human scoring",
@@ -582,7 +582,7 @@ export default async function Subpage({
             index="07"
             eyebrow="CONTACT"
             title="Let's work on questions that matter."
-            lead="CORE HQ welcomes thoughtful conversations with investors, cities and public institutions, business partners, researchers, builders, and potential collaborators."
+            lead="CORE HQ is a personal, non-commercial showcase. Researchers, builders, and curious people are welcome to explore the work and share thoughtful feedback."
           />
           <section className="section">
             <div className="wrap contact-grid">
@@ -609,9 +609,9 @@ export default async function Subpage({
               </div>
               <div className="contact-list">
                 {[
-                  "Investors",
-                  "Cities & public institutions",
-                  "Business partners",
+                  "Research feedback",
+                  "Local knowledge",
+                  "Technical ideas",
                   "Researchers",
                   "Builders & collaborators",
                   "General inquiries",
@@ -640,7 +640,7 @@ export default async function Subpage({
             index="08"
             eyebrow="PRIVACY"
             title="A quiet website by design."
-            lead="This notice describes the CORE HQ company website as implemented. It is a practical draft for founder review, not a substitute for legal advice."
+            lead="This notice describes the CORE HQ personal showcase as implemented. It is a practical draft for founder review, not a substitute for legal advice."
           />
           <section className="section">
             <div className="wrap legal-copy">
@@ -652,10 +652,10 @@ export default async function Subpage({
               </p>
               <h2>Hosting and server logs</h2>
               <p>
-                When hosted, the hosting provider may process your IP address,
-                browser details, and request logs to deliver and secure pages.
-                The exact provider, retention period, and applicable terms must
-                be added once deployment is chosen.
+                This site is hosted on Vercel. Vercel may process your IP
+                address, browser details, and request logs to deliver and
+                secure pages. Its retention and privacy practices are governed
+                by Vercel&apos;s published policies.
               </p>
               <h2>External links</h2>
               <p>
@@ -666,8 +666,7 @@ export default async function Subpage({
               <p>
                 A public contact destination and responsible legal identity are
                 pending founder verification. This notice should be updated
-                before public launch if hosting, analytics, forms, or other data
-                processing changes.
+                if hosting, analytics, forms, or other data processing changes.
               </p>
             </div>
           </section>
