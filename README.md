@@ -1,8 +1,8 @@
-# CORE HQ
+# CORE
 
-Personal, non-commercial showcase for CORE HQ and [CORE — Creation of Reborn Earth](https://creationofrebornearth.com), created by Vincent Leguide. It does not sell products, accept payments, show ads, or generate revenue.
+Company website for CORE and its first product, [CORE World](https://creationofrebornearth.com), created by Vincent Leguide. The repository retains its technical name `core-hq`.
 
-Production: <https://core-hq-orcin.vercel.app>
+The previous personal-showcase release remains at <https://core-hq-orcin.vercel.app>. This company-oriented update is complete locally but cannot be published to the existing Vercel Hobby plan under its commercial-use restriction; see [Deployment](docs/DEPLOYMENT.md).
 
 ## Run locally
 
@@ -33,4 +33,4 @@ npm run build
 - [Deployment](docs/DEPLOYMENT.md)
 - [QA report](docs/QA_REPORT.md)
 
-No public contact address, corporate registration, or final domain was verified during implementation. The contact and legal pages state those limits openly.
+No public contact address or corporate registration was verified. The contact and legal pages state those limits openly.

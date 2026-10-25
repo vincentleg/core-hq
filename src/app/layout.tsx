@@ -8,20 +8,20 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
   title: {
-    default: "CORE HQ — Building intelligence for a better world",
-    template: "%s | CORE HQ",
+    default: "CORE — Building intelligence for the physical world",
+    template: "%s | CORE",
   },
   description:
-    "CORE HQ is building technology to understand the physical world, explore complex challenges, and support better human decisions.",
+    "CORE is building a shared intelligence layer for the physical world, beginning with CORE World.",
   openGraph: {
     type: "website",
-    siteName: "CORE HQ",
+    siteName: "CORE",
     images: [
       {
         url: "/brand/og.png",
         width: 1200,
         height: 630,
-        alt: "CORE HQ — Understand the world. Shape what comes next.",
+        alt: "CORE — Understand our world. Build a better one.",
       },
     ],
   },

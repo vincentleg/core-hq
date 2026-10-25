@@ -46,7 +46,7 @@ export function PageIntro({
 }) {
   return (
     <section className="page-intro wrap">
-      <div className="page-index">{index} / CORE HQ</div>
+      <div className="page-index">{index} / CORE</div>
       <Eyebrow>{eyebrow}</Eyebrow>
       <h1>{title}</h1>
       <p className="lead">{lead}</p>

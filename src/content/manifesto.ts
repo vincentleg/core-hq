@@ -1,26 +1,50 @@
 export const manifesto = [
   [
-    "Knowledge is abundant. Understanding is scarce.",
-    "We can measure streets, climate, infrastructure, movement, and resources in extraordinary detail. Yet the knowledge is scattered across disciplines, tools, and institutions. The hardest problems live between them.",
+    "The world is one system.",
+    "Cities, energy, infrastructure, ecology, and communities shape one another. Understanding any one of them requires seeing its connections.",
   ],
   [
-    "The world does not fit into a single model.",
-    "Every model simplifies. Simulation gives us a place to test assumptions and compare possibilities, but it cannot certify the future. The difference between a calculation and an observed outcome must always remain visible.",
+    "Connect knowledge.",
+    "Information becomes more useful when people can trace how facts, disciplines, and local experience relate.",
   ],
   [
-    "Intelligence should enlarge human agency.",
-    "AI can help investigate, connect evidence, and surface overlooked questions. It must not acquire authority simply because it is fast or fluent. People remain responsible for decisions, especially when those decisions shape other people's lives.",
+    "Keep evidence distinct.",
+    "Observation, interpretation, assumption, and speculation must remain legible as different kinds of knowledge.",
   ],
   [
-    "A shared future needs many voices.",
-    "Local experience can reveal what official datasets miss. People should be able to contribute observations, proposals, evidence, and criticism. Participation needs provenance, attribution, respect for rights, and safeguards against manipulation, abuse, and misinformation.",
+    "Treat models as questions.",
+    "A simulation can illuminate possibilities under stated conditions. It cannot certify what will happen in reality.",
   ],
   [
-    "Power needs limits.",
-    "We reject technological authoritarianism. CORE is not intended to rank the worth of human beings or decide humanity's future on its behalf. Any system used in public decisions must make its limits visible and remain open to accountable oversight.",
+    "Use AI to extend judgment.",
+    "Artificial intelligence can help investigate and synthesize. Its speed does not give it authority over people.",
   ],
   [
-    "Progress has to be earned.",
-    "Promising a better world is easy. Demonstrating a useful, trustworthy method is harder. We will judge progress by reproducible evidence and real outcomes, not by the size of a vision or the confidence of a prediction.",
+    "Never rank human worth.",
+    "No algorithm should assign civic value to a person or decide whose life matters more.",
+  ],
+  [
+    "Keep people accountable.",
+    "Important decisions require appropriate human review, public responsibility, and the ability to challenge conclusions.",
+  ],
+  [
+    "Make room for participation.",
+    "People should be able to add observations, evidence, ideas, and criticism to the questions that affect their lives.",
+  ],
+  [
+    "Respect contributors.",
+    "Participation needs attribution, privacy, clear rights, and safeguards against manipulation and abuse.",
+  ],
+  [
+    "Measure what changes.",
+    "Progress is demonstrated by evidence and real-world outcomes, not by promises or favorable model outputs.",
+  ],
+  [
+    "Build across generations.",
+    "Technology for shared challenges should serve long-term human benefit, beyond any one institution or moment.",
+  ],
+  [
+    "Begin with practical work.",
+    "CORE exists to turn these principles into useful tools, starting with CORE World and improving through scrutiny.",
   ],
 ];

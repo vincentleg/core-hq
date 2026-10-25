@@ -1,65 +1,48 @@
 export const site = {
-  name: "CORE HQ",
-  product: "CORE — Creation of Reborn Earth",
+  name: "CORE",
+  product: "CORE World",
   productUrl: "https://creationofrebornearth.com",
   tagline: "Building intelligence for a better world.",
   positioning: "The intelligence layer for the physical world.",
   founder: "Vincent Leguide",
   contactEmail: "", // Add only after the founder verifies an address for public use.
   navigation: [
-    ["About", "/company"],
-    ["CORE", "/core"],
-    ["Manifesto", "/manifesto"],
-    ["Technology", "/technology"],
+    ["Home", "/"],
+    ["CORE World", "/world"],
+    ["Vision", "/vision"],
     ["Founder", "/founder"],
-    ["Responsibility", "/responsibility"],
   ],
 } as const;
 
 export const pageMeta: Record<string, { title: string; description: string }> =
   {
-    company: {
-      title: "About",
+    world: {
+      title: "CORE World",
       description:
-        "Explore CORE HQ, Vincent Leguide’s independent project to imagine an intelligence layer for the physical world.",
+        "Explore CORE World, an evolving digital Earth for investigating real places, evidence, and possible futures.",
     },
-    core: {
-      title: "CORE: Our First Product",
+    vision: {
+      title: "Vision & Manifesto",
       description:
-        "Explore CORE, an early digital Earth prototype for investigating cities, evidence, scenarios, and human decisions.",
-    },
-    manifesto: {
-      title: "Manifesto",
-      description:
-        "A case for collective intelligence, human agency, and evidence-based progress on a shared planet.",
+        "CORE's vision for a shared intelligence layer for the physical world, grounded in evidence and human agency.",
     },
     founder: {
       title: "Founder",
       description:
-        "Meet Vincent Leguide, founder of CORE HQ and creator of CORE.",
-    },
-    technology: {
-      title: "Technology",
-      description:
-        "How CORE HQ approaches spatial data, bounded AI workflows, scenario exploration, and human oversight.",
-    },
-    responsibility: {
-      title: "Responsibility",
-      description:
-        "Our present safeguards and future commitments for evidence, privacy, participation, and accountable technology.",
+        "Meet Vincent Leguide, founder of CORE, and the personal story behind CORE World.",
     },
     contact: {
       title: "Contact",
       description:
-        "Explore CORE HQ’s independent work and ways to contribute research, ideas, or feedback.",
+        "Explore CORE's work and public project while a direct contact destination is being verified.",
     },
     privacy: {
       title: "Privacy",
-      description: "How this static CORE HQ website handles data and privacy.",
+      description: "How this static CORE website handles data and privacy.",
     },
     terms: {
       title: "Website Use",
       description:
-        "A plain-language draft about using the CORE HQ website and its content.",
+        "A plain-language draft about using the CORE website and its content.",
     },
   };

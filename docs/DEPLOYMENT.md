@@ -1,10 +1,12 @@
 # Deployment
 
-Production: <https://core-hq-orcin.vercel.app> on the existing Vercel Hobby account. The repository is linked to Vercel project `vincentleg/core-hq`. `NEXT_PUBLIC_SITE_URL` is configured for Production with the public origin. The build remains a static Next.js export; no database, paid API, purchase, or plan upgrade is used.
+The existing production URL is <https://core-hq-orcin.vercel.app>. It currently serves the earlier personal, non-commercial showcase. The new CORE company site is complete locally but has **not** been deployed.
 
-The founder clarified on October 24, 2026 that this is a personal, non-commercial portfolio and showcase project. The public copy reflects that purpose. [Vercel's fair-use guidance](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage) restricts Hobby to personal, non-commercial use; [Vercel staff guidance](https://community.vercel.com/t/question-on-fair-use-and-hobby-plan-suitability-for-demo-commercial-websites-in-portfolio/1769) allows unpaid portfolio demos. Reassess hosting before turning the project into a business website, soliciting customers, adding payments or ads, or monetizing it.
+The new brief explicitly positions CORE as a company and asks for an investor-ready site. [Vercel's fair-use guidance](https://vercel.com/docs/limits/fair-use-guidelines#commercial-usage) restricts Hobby to personal, non-commercial use. [Vercel staff specifically classified a static business showcase without direct sales as commercial](https://community.vercel.com/t/fair-use-of-the-hobby-plan/2725). The authenticated `vincentleg` account has only a Hobby team. No plan upgrade or purchase was authorized, so deploying this revision to that project would conflict with the plan terms.
 
-## Redeploy
+`vercel.json` disables automatic Git deployments so pushing this revision cannot silently replace the earlier personal site. The existing project, production alias, and `NEXT_PUBLIC_SITE_URL` configuration remain unchanged.
+
+## Publish when hosting permits
 
 From this repository, after validation:
 
@@ -13,7 +15,8 @@ npm ci
 npm run typecheck
 npm run lint
 npm test
-vercel deploy --prod --yes
+# On a plan or host that permits company use, re-enable Git deployment if desired,
+# then deploy the static Next.js project.
 ```
 
-The `vercel.json` file applies security headers on Vercel. `public/_headers` remains for compatible static hosts. If the production alias changes, update the Production `NEXT_PUBLIC_SITE_URL` variable, README, and this file, then redeploy so Open Graph and sitemap URLs point to the final origin.
+The `out/` directory is the deployable static build. The `vercel.json` file contains old-route redirects and security headers; `public/_headers` is for compatible static hosts. If the future public origin changes, set `NEXT_PUBLIC_SITE_URL` before building so metadata and the sitemap use it. No CORE World product deployment or DNS record should be changed.

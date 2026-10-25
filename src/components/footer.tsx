@@ -16,31 +16,27 @@ export function Footer() {
               alt=""
               unoptimized
             />
-            <span>
-              CORE <b>HQ</b>
-            </span>
+            <span>CORE</span>
           </Link>
-          <p>Building intelligence for a better world.</p>
+          <p>Building intelligence for the physical world.</p>
         </div>
         <div className="footer-links">
           <span>Explore</span>
-          <Link href="/company">About</Link>
-          <Link href="/core">CORE</Link>
-          <Link href="/manifesto">Manifesto</Link>
-          <Link href="/technology">Technology</Link>
+          <Link href="/">Home</Link>
+          <Link href="/world">CORE World</Link>
+          <Link href="/vision">Vision</Link>
         </div>
         <div className="footer-links">
           <span>Connect</span>
           <Link href="/founder">Founder</Link>
-          <Link href="/responsibility">Responsibility</Link>
           <Link href="/contact">Contact</Link>
           <a href={site.productUrl} target="_blank" rel="noopener noreferrer">
-            Open CORE <ArrowUpRight size={14} aria-hidden="true" />
+            Explore CORE World <ArrowUpRight size={14} aria-hidden="true" />
           </a>
         </div>
       </div>
       <div className="wrap footer-bottom">
-        <span>© {new Date().getFullYear()} CORE HQ</span>
+        <span>© {new Date().getFullYear()} CORE</span>
         <span>San Francisco Bay Area · Built with care for the real world</span>
         <div>
           <Link href="/privacy">Privacy</Link>

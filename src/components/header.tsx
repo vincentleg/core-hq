@@ -17,7 +17,7 @@ export function Header() {
           className="brand"
           href="/"
           onClick={() => setOpen(false)}
-          aria-label="CORE HQ home"
+          aria-label="CORE home"
         >
           <Image
             src="/brand/core-mark.svg"
@@ -26,9 +26,7 @@ export function Header() {
             alt=""
             unoptimized
           />
-          <span>
-            CORE <b>HQ</b>
-          </span>
+          <span>CORE</span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           {site.navigation.map(([label, href]) => (
@@ -47,7 +45,7 @@ export function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Explore CORE <ArrowUpRight size={15} aria-hidden="true" />
+          Explore CORE World <ArrowUpRight size={15} aria-hidden="true" />
         </a>
         <button
           className="menu-toggle"
@@ -71,16 +69,13 @@ export function Header() {
             {label}
           </Link>
         ))}
-        <Link href="/contact" onClick={() => setOpen(false)}>
-          Contact
-        </Link>
         <a
           href={site.productUrl}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
         >
-          Explore CORE ↗
+          Explore CORE World ↗
         </a>
       </nav>
     </header>

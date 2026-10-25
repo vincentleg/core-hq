@@ -6,12 +6,9 @@ const base = process.env.SMOKE_URL || "http://127.0.0.1:3000";
 const chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const routes = [
   "/",
-  "/company",
-  "/core",
-  "/manifesto",
+  "/world",
+  "/vision",
   "/founder",
-  "/technology",
-  "/responsibility",
   "/contact",
   "/privacy",
   "/terms",
@@ -66,6 +63,16 @@ try {
             .map((image) => image.src),
         );
       assert.deepEqual(brokenImages, [], `${route} broken images`);
+      if (route === "/founder") {
+        const portrait = page.getByRole("img", {
+          name: "Vincent Leguide, founder of CORE",
+        });
+        assert.equal(await portrait.count(), 1);
+        assert.ok(
+          await portrait.evaluate((image) => image.naturalWidth > 0),
+          "founder portrait loaded",
+        );
+      }
       const localLinks = await page
         .locator('a[href^="/"]')
         .evaluateAll((links) => links.map((link) => link.getAttribute("href")));
@@ -75,9 +82,20 @@ try {
         ),
         `${route} unexpected local link: ${localLinks}`,
       );
-      if (route === "/" && [375, 1440].includes(width))
+      if (route === "/" && [375, 1440].includes(width)) {
+        const portrait = page.getByRole("img", {
+          name: "Vincent Leguide, founder of CORE",
+        });
+        await portrait.scrollIntoViewIfNeeded();
+        await portrait.evaluate((image) => image.decode());
         await page.screenshot({
           path: `screenshots/home-${width}.png`,
+          fullPage: true,
+        });
+      }
+      if (route === "/founder" && [375, 1440].includes(width))
+        await page.screenshot({
+          path: `screenshots/founder-${width}.png`,
           fullPage: true,
         });
     }
@@ -92,10 +110,10 @@ try {
       );
       await page
         .getByRole("navigation", { name: "Mobile navigation" })
-        .getByRole("link", { name: "About" })
+        .getByRole("link", { name: "CORE World", exact: true })
         .click();
-      await page.waitForURL(/\/company\/?$/);
-      assert.match(page.url(), /\/company\/?$/);
+      await page.waitForURL(/\/world\/?$/);
+      assert.match(page.url(), /\/world\/?$/);
     }
     await page.close();
   }
@@ -103,15 +121,34 @@ try {
   await page.goto(base);
   assert.equal(
     await page
-      .getByRole("link", { name: /Explore CORE/ })
+      .getByRole("link", { name: /Explore CORE World/ })
       .first()
       .getAttribute("href"),
     "https://creationofrebornearth.com",
   );
   assert.deepEqual(errors, [], "browser errors");
+  if (base.startsWith("https://")) {
+    for (const [oldPath, destination] of [
+      ["company", "/"],
+      ["core", "/world/"],
+      ["manifesto", "/vision/"],
+      ["technology", "/vision/"],
+      ["responsibility", "/vision/"],
+    ]) {
+      const response = await page.goto(`${base}/${oldPath}`);
+      assert.ok(
+        [200, 308].includes(response?.status()),
+        `${oldPath} redirect response`,
+      );
+      assert.ok(
+        page.url().endsWith(destination),
+        `${oldPath} redirects to ${destination}`,
+      );
+    }
+  }
   await page.close();
   console.log(
-    `PASS: ${routes.length} routes × 5 widths, links, metadata, images, mobile menu, product CTA, console`,
+    `PASS: ${routes.length} routes × 5 widths, links, metadata, portrait, mobile menu, product CTA, console`,
   );
 } finally {
   await browser.close();
